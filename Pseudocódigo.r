@@ -1,8 +1,11 @@
  N = 5 filósofos
+
  Garfos 0..N-1 (garfo i fica entre filósofos i e (i+1) mod N)
+
 Para cada filósofo p:
  left = min(garfo_esquerda(p), garfo_direita(p))
  right = max(garfo_esquerda(p), garfo_direita(p))
+
 Loop:
  pensar()
  estado[p] <- "com fome"
